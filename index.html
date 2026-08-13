@@ -3,115 +3,58 @@
 
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>blog</title>
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciência no Cotidiano</title>
   <style>
-     header {
-         background-color: (25,25,112);
-         color: (0,0,0);
-         text-align: center;
-         max-width: 800px;
-         margin: 0 auto;
-         padding: 16px;
-         border: 5px solid #191970;
-    }
-   
-    main{
-background-color: (105,89,205);
-color:(0,0,0);
-text-align: center;
-max-width: 800px;
-margin: 0 auto;
-padding: 16px;
-border: 5px solid #1A0323;
-}
-img {
-width: 450px;
-height: 300px;
-}
-</style>
- 
-</head>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            gap: 20px;
+        }
 
-<!DOCTYPE html>
-
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>blog</title>
- 
-  <style>
-     header {
-         background-color: #008080;
-         color: #FFFFFF;
-         text-align: center;
-         max-width: 800px;
-         margin: 0 auto;
-         padding: 16px;
-         border: 5px solid #191970;
-    }
-   
-    main{
-background-color:#000000
-;
-color:#0000EE;
-text-align: center;
-max-width: 800px;
-margin: 0 auto;
-padding: 16px;
-border: 5px solid #1A0323;
-}
-img {
-width: 450px;
-height: 300px;
-}
-</style>
- 
+        img {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Ciência no Cotidiano</h1>
+    </header>
 
- 
- <script>
-const botao = document.querySelector("button");
-botao.addEventListener("click", botaoClicado);
-function botaoClicado() {
-console.log("fui clicado");
-}
-  function botaoClicado() {
-let texto = botao.querySelector("span");
-texto.textContent++;
-}
- 
-</script>
-   </html>
-Responder
-Encaminhar
-￼
-Adicionar reação
-<body>
-  <header>
-<h1>Boas-vindas ao meu novo blog! sobre a comunidade de a casa coruja</h1>
-<p>Vou compartilhar fatos sobre comunidade de a casa coruja</p>
-  </header>
- <main>
-   <img src="Gemini_Generated_Image_ejvswrejvswrejvs.png">
-  <button>​👍🏾​<span>0</span></button>
-  <button>👎🏿​<span>0</span></button>
-  <h2>Meu primeiro post</h2>
+    <main>
+        <img src="marie.jpeg" alt="Foto da Marie Curie">
+        <div>
+            <h2>Meu primeiro post</h2>
+            <p>Por: Tatiana Burkater</p>
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar fatos e espaço para quem gosta de entender como o mundo funciona.</p>
+            <blockquote>
+                <p><em>"Na vida, não existe nada a temer, mas a entender."</em></p>
+            </blockquote>
+            <button>❤️<span>0</span></button>
+            <button>⭐<span>5</span></button>
+        </div>
+    </main>
 
+    <script>
+        const botoes = document.querySelectorAll("button");
 
-   
-  <p>Por:nicolau</p>
-  <p>A mensagen secreta</p>
-  <p>Voce sabia que cada epissodio de a casa coruja no ingles juntando as primeira letra de cada ep forma uma mensagen com relaçáo ao final</p>
-   
-  </main>
-   </body>
+        botoes.forEach(function(botao) {
+            botao.addEventListener("click", botaoClicado);
+        });
 
- 
- <script>
-</script>
-   </html>
+        function botaoClicado() {
+            let texto = botao.querySelector("span");
+            if (texto) {
+                texto.textContent++;
+            }
+        }
+    </script>
+</body>
+</html>
+

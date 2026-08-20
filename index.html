@@ -54,6 +54,11 @@ font-weigth: bold;
   </main>
    </body>
  const botao = document.queryselector("button");
- botao.add
+ botao.addEventlitener("click", botaoClicado);
+
+ function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
    </html>
 
